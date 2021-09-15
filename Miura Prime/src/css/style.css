@@ -83,6 +83,10 @@ header, footer {
     cursor: pointer;
 }
 
+#contentMenu {
+    display: none;
+}
+
 
 /* Front Page - Main Shows/Movies */
 .mainMovies {

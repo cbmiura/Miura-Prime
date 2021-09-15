@@ -1,8 +1,9 @@
-function click() {
-   var menu = document.getElementById('contentMenu');
-   if (menu.className == "contentMenuOff") {
-       menu.className = "contentMenuOn";
-   } else {
-       menu.className = "contentMenuOff";
-   }
+function menuClick() {
+  var menu = document.getElementById('contentMenu');
+  if (menu.style.display == "block") {
+    menu.style.display = "none";
+  }
+  else { 
+    menu.style.display = "block";
+  }
 }
