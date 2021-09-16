@@ -26,11 +26,20 @@
                         <input type="search" placeholder="Pesquisar...">
                         <div class="perfil">
                             <img src="./src/img/icon.png">
-                            <div>
+                            <div class="inlineDiv">
                                 <button class="contentButton" onclick="menuClick()">⮟</button>
-                                <div id="contentMenu">
-                                    <a href="#">Ajuda</a>
-                                    <a href="#">Não é o Miura? Sair</a>
+                                <div id="contentMenu" class="conteuDoMenu">
+                                    <a href="#">Sua Lista</a><br>
+                                    <a href="#">Conta e configurações</a><br>
+                                    <a href="#">Assista onde quiser</a><br>
+                                    <a href="#">Ajuda</a><br>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        Adicionar novo perfil
+                                    </a><br>
+                                    <a href="#">Editar perfis</a><br>
+                                    <a href="#">Saiba mais</a><br>
+                                    <a href="#">Não é o Miura? Sair</a><br>
                                 </div>
                             </div>
                         </div>
@@ -41,23 +50,33 @@
 
         <main>
             <!--Front Page - Main Shows/Movies -->
-            <div class="mainMovies">
-                <h1>Só no Miura Prime</h1>
-                <section class="mainTitles">
-                    <img src="" alt="">
+            <div class="mainContainer">
+                <section class="mainTitles" id="firstTitle">
+                    <img src="./src/img/frontShows/iCarly.jpeg" alt="iCarly">
                 </section>
                 <section class="mainTitles">
-                    <img src="" alt="">
+                    <img src="./src/img/frontShows/infinite.jpeg" alt="Infinite">
                 </section>
                 <section class="mainTitles">
-                    <img src="" alt="">
+                    <img src="./src/img/frontShows/mRobot.jpeg" alt="Mr. Robot">
                 </section>
                 <section class="mainTitles">
-                    <img src="" alt="">
+                    <img src="./src/img/frontShows/viajantes.jpeg" alt="Viajantes">
                 </section>
-                <section class="mainTitles">
-                    <img src="" alt="">
+                <section class="mainTitles" id="lastTitle">
+                    <img src="./src/img/frontShows/voyeurs.jpeg" alt="Voyeurs">
                 </section>
+            </div>
+
+            <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+            <a class="next" onclick="nextSlide(1)">&#10095;</a>
+
+            <div class="dotDiv">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
 
             <!-- List of Shows -->

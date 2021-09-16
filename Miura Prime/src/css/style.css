@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
 * {
     margin: 0;
@@ -7,9 +7,10 @@
 }
 
 body, html {
-    font-family: "Azeret Mono";
+    font-family: "Yanone Kaffeesatz";
     background-color: #10243a;
     color: whitesmoke;
+    font-size: 20px;
 }
 
 a {
@@ -41,9 +42,14 @@ header, footer {
     padding: 0 1em;   
 }
 
+.nav a:hover {
+    text-decoration: white underline;
+}
+
 .menu {
     display: flex;
     align-items: center;
+    padding: 0 0 0 13em;
 }
 
 .menu img {
@@ -52,16 +58,15 @@ header, footer {
 
 .menu input {
     text-align: center;
-    border-radius: 1em;
-    padding: .25em;
+    padding: .50em;
     border: 1px solid black;
 }
 
 .perfil {
-    padding: 0 0 0 2em;
+    padding: 0 0 0 4em;
 }
 
-.perfil button {
+.inlineDiv {
     display: inline-flex;
     vertical-align: super;
 }
@@ -87,21 +92,79 @@ header, footer {
     display: none;
 }
 
+.conteuDoMenu {
+    position: absolute;
+    background-color: #0d1c2c;
+    column-count: 2;
+    column-rule: 1px solid grey;
+    top: 11%;
+    right: 0%;
+    left: 70%;
+    padding: 1em;
+    z-index: 20;
+}
+
+.conteuDoMenu a {
+    display: table-row;
+}
+
+.conteuDoMenu a:hover {
+    text-decoration: white underline;
+}
+
 
 /* Front Page - Main Shows/Movies */
-.mainMovies {
+.mainTitles {
+    display: none;
+}
+
+.mainContainer {
+    position: relative;
+}
+
+.mainContainer img {
     width: 100%;
 }
 
-.mainTitles {
-    height: 60vh;
-    display: none;
-    overflow: hidden;
+/* Controls */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    font-weight: bolder;
+    font-size: 2em;
+    padding: 1em 1em;
 }
 
-.mainTitles:first-of-type {
-    display: block;
+.next {
+    right: 0;
 }
 
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dots */
+.dotDiv {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    word-spacing: .5em;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    margin: 0 .5%;
+    background-color: rgba(177, 177, 177, 0.8);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.active, .dot:hover {
+    background-color: white;
+}
 /* End of Main Shows/Movies */
 
