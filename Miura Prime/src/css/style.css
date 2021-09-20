@@ -168,3 +168,84 @@ header, footer {
 }
 /* End of Main Shows/Movies */
 
+/* Shows */
+
+.shows {
+    overflow: hidden;
+}
+
+.shows a, h3{
+    display: inline-flex;
+    padding: 1em 4px;
+}
+
+.shows a {
+    font-size: 14px;
+}
+
+.shows a:hover {
+    text-decoration: underline;
+}
+
+.content{
+    display: inline-flex;
+    transition: 1s ease-in-out; 
+}
+
+.content section{
+    padding: 0 .3em;
+}
+
+.controlOne {
+    position: absolute;
+    top: 78%;
+    font-size: 35px;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+}
+
+.controlOne .right {
+    padding: 0 0 0 37em;
+}
+
+.controlTwo {
+    position: absolute;
+    top: 120%;
+    font-size: 35px;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+}
+
+.controlTwo .right {
+    padding: 0 0 0 37em;
+}
+
+/* Footer */
+.img {
+    display: grid;
+    justify-content: center;
+    padding: .5em;
+}
+
+.img img {
+    width: 10em;
+}
+
+.info {
+    text-align: center;
+}
+
+.info a {
+    color: rgb(50, 156, 206);
+    padding: 0 0.5em 0 0;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    padding: 1em;
+    font-size: 14px;
+}
